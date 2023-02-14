@@ -11,8 +11,7 @@ st.write(df)
 begDate = df.index.min()
 endDate = df.index.max()
 
-st.write(begDate)
-st.write(endDate)
+
 
 minDateDropdown = pd.to_datetime('2010-01-01')
 
@@ -25,6 +24,9 @@ st.write(filterDF)
 import plotly.express as px
 fig = px.line(filterDF, x=filterDF.index, y="Close")
 st.plotly_chart(fig)
+
+st.write(begDate)
+st.write(endDate)
 
 
 
