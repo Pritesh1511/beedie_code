@@ -11,6 +11,9 @@ st.write(df)
 begDate = df.index.min()
 endDate = df.index.max()
 
+st.write(begDate)
+st.write(endDate)
+
 minDateDropdown = pd.to_datetime('2010-01-01')
 
 pickStart =st.sidebar.date_input("Pick start date:",begDate,min_value = minDateDropdown)
@@ -26,5 +29,3 @@ st.plotly_chart(fig)
 
 
 
-st.write(begDate)
-st.write(endDate)
