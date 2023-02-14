@@ -14,6 +14,8 @@ minDateDropdown = pd.to_datetime('2010-01-01')
 pickStart =st.date_input("Pick start date:",begDate,min_value = minDateDropdown)
 pickEnd = st.date_input("Pick start date:",endDate)
 
+filterDF = df.loc[pickStart:pickEnd]
+st.write(filterDF)
 st.write(df.loc[pickStart:pickEnd])
 
 
