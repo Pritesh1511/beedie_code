@@ -5,6 +5,7 @@ st.write("APP WORKING")
 tickers = ['AAPL','DIS','IBM']
 ticker = st.selectbox("Pick a ticker",tickers)
 df = pd.read_csv(ticker+".csv",parse_dates=['Date'],index_col=['Date'])
+st.write(df)
 
 
 begDate = df.index.min()
@@ -24,6 +25,6 @@ st.plotly_chart(fig)
 
 
 
-st.write(df)
+
 st.write(begDate)
 st.write(endDate)
