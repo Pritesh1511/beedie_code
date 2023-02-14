@@ -24,6 +24,6 @@ st.plotly_chart(fig)
 
 
 
-
+st.write(df)
 st.write(begDate)
 st.write(endDate)
